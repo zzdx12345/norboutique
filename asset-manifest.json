@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/norboutique/static/css/main.ee4058ab.css",
-    "main.js": "/norboutique/static/js/main.9521ced8.js",
+    "main.css": "/norboutique/static/css/main.e18d9cd4.css",
+    "main.js": "/norboutique/static/js/main.53df4eeb.js",
     "static/media/slider02.jpg": "/norboutique/static/media/slider02.a620bfbbf9ac6890cc91.jpg",
     "static/media/banner06.jpg": "/norboutique/static/media/banner06.21834fba6618299c0a53.jpg",
     "static/media/logo01.jpg": "/norboutique/static/media/logo01.0cb4dcc1259a0d7aa152.jpg",
@@ -56,11 +56,11 @@
     "static/media/slick.woff": "/norboutique/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/norboutique/index.html",
     "static/media/antd.less": "/norboutique/static/media/antd.7affb7a1925b6ab47ea6.less",
-    "main.ee4058ab.css.map": "/norboutique/static/css/main.ee4058ab.css.map",
-    "main.9521ced8.js.map": "/norboutique/static/js/main.9521ced8.js.map"
+    "main.e18d9cd4.css.map": "/norboutique/static/css/main.e18d9cd4.css.map",
+    "main.53df4eeb.js.map": "/norboutique/static/js/main.53df4eeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee4058ab.css",
-    "static/js/main.9521ced8.js"
+    "static/css/main.e18d9cd4.css",
+    "static/js/main.53df4eeb.js"
   ]
 }
