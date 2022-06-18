@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { SearchOutlined, ShoppingCartOutlined, UserOutlined} from '@ant-design/icons'
+import { withRouter } from 'react-router-dom'
 
 
 
-export default function Header() {
+function Header(props) {
 
     const logo1 = require('../../Image/b-img/logo1.png')
     const [searchState,setSearchState] = useState(false)
@@ -26,6 +27,10 @@ export default function Header() {
         ]}
     ]
 
+    const jumpTo = (item) => {
+        props.history.push(item.toLowerCase())
+    }
+
   return (
     <Box>
         <img src={logo1} alt=''/>
@@ -42,7 +47,7 @@ export default function Header() {
 
         <MenuBox>
             {menus.map((item,i)=>
-                <MenuItems key={i}>
+                <MenuItems key={i} onClick={()=>jumpTo(item.title)}>
                     {item.title}
                     {item.subTitle &&
                         <div className='subItems'>
@@ -149,3 +154,5 @@ const MenuItems = styled.div`
             }
         }
 `
+
+export default withRouter(Header)
