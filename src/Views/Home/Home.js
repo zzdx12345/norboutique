@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 import { Carousel, Image } from 'antd'
-import Header from '../Share/Header'
+import axios from 'axios'
 import Slick from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import scss from './Home.module.scss'
+import Header from '../Share/Header'
 import db from '../../db/db.json' 
 
 

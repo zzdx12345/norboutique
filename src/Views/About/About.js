@@ -1,36 +1,29 @@
 import { Image } from 'antd'
-import React, { useState, useCallback } from 'react'
+import React from 'react'
 import Card from '../../Items/Card'
 import Header from '../Share/Header'
 import scss from './About.module.scss'
 import { LoremIpsum } from 'lorem-ipsum'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api'
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api'
 
 
 
 export default function About() {
 
     const lorem = new LoremIpsum()
-    const [map, setMap] = useState(null)
-
-    const initMap = {
-      style:{ width: '70%', height: '400px', margin: 'auto' },
-      center: { lat: 25.014825, lng: 121.481729 }
-    }
-
+    const initCenter = { lat: 25.014825, lng: 121.481729 }
+    const marker = { lat: 25.014885, lng: 121.481945 }
     const { isLoaded } = useJsApiLoader({
       id: 'google-map-script',
-      googleMapsApiKey: "AIzaSyAlRNoDnnU1xxK11r5sSLMZzHFjwoauW_Y"
+      googleMapsApiKey: process.env.REACT_APP_API_KEY
     })
 
-    const onLoad = useCallback((map)=>{
-      const bounds = new window.google.maps.LatLngBounds(initMap.center)
-      map.fitBounds(bounds)
-      setMap(map)
-    },[])
-  
-    const onUnmount = useCallback((map)=>setMap(null),[])
-    console.log(map);
+    // const onLoad = useCallback((map)=>{
+    //   const bounds = new window.google.maps.LatLngBounds(initCenter)
+    //   map.fitBounds(bounds)
+    //   setMap(map)
+    // },[initCenter])
+    // const onUnmount = useCallback(()=>setMap(null),[])
 
   return (
     <div>
@@ -45,9 +38,8 @@ export default function About() {
         </div>
 
         {isLoaded && 
-        <GoogleMap mapContainerStyle={initMap.style} center={initMap.center}
-          zoom={5} onLoad={onLoad} onUnmount={onUnmount}>
-            
+        <GoogleMap mapContainerClassName={scss.map} center={initCenter} zoom={16}>
+            <Marker position={marker}/>
         </GoogleMap>}
     </div>
   )

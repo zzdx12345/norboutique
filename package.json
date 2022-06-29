@@ -5,7 +5,6 @@
   "private": true,
   "dependencies": {
     "@douyinfe/semi-ui": "^2.12.0",
-    "@googlemaps/react-wrapper": "^1.1.34",
     "@react-google-maps/api": "^2.12.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -13,7 +12,6 @@
     "antd": "^4.21.0",
     "axios": "^0.27.2",
     "gh-pages": "^4.0.0",
-    "i": "^0.3.7",
     "lorem-ipsum": "^2.0.4",
     "npm": "^8.12.2",
     "react": "^18.1.0",

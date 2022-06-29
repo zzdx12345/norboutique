@@ -4,7 +4,8 @@
             "id": "1001",
             "name": "HERMES Kelly 28CM Epsom",
             "spec": "(D刻 76 靛藍金釦)",
-            "price": "457000",
+            "price": "502700",
+            "discount": "10%",
             "pics": [
                 "Image/goods/h1 - HERMES Kelly 28CM Epsom/pic01.jpg",
                 "Image/goods/h1 - HERMES Kelly 28CM Epsom/pic02.jpg",
@@ -43,6 +44,7 @@
             "name": "HERMES Birkin 30CM Togo Y刻 特殊鱷魚皮手把牛皮柏金包",
             "spec": "(AC 經典駝銀釦)",
             "price": "928000",
+            "discount": "15%",
             "pics": [
                 "Image/goods/h2 - HERMES Birkin 30CM Togo Y刻 特殊鱷魚皮手把牛皮柏金包/pic01.jpg",
                 "Image/goods/h2 - HERMES Birkin 30CM Togo Y刻 特殊鱷魚皮手把牛皮柏金包/pic02.jpg",
